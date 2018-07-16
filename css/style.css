@@ -143,7 +143,7 @@ footer::after {
   color: #278da4;
 }
 
-.btn {
+.btn, .btn-info, .btn-callout {
   color: #fff;
   display: inline-block;
   font-weight: bold;
@@ -152,11 +152,13 @@ footer::after {
   padding: 0.75em 1.5em;
   border-radius: 0.35em;
 }
+
 .btn-callout {
   font-size: 1.1em;
   margin-bottom: 2.25em;
   background-color: #c13c69;
 }
+
 .btn-info {
   font-size: 0.85em;
   background-color: #278da4;
