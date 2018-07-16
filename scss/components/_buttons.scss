@@ -1,0 +1,36 @@
+// ======================================
+//  Button Styles
+// ======================================
+
+// % so that the actual class doesn't appear in the css file unless it's actually being used
+%btn {
+  color: $white;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  border-radius: 0.35em;
+  &:hover {
+    color: $white;
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: initial;
+  }
+}
+
+.btn {
+  &-callout {
+    @extend %btn;
+    font-size: 1.1em;
+    margin-bottom: 2.25em;
+    background-color: $color-secondary;
+  }
+  &-info {
+    @extend %btn;
+    font-size: 0.85em;
+    background-color: $color-primary;
+    margin-top: auto;
+  }
+}
