@@ -6,10 +6,7 @@
 .main-content {
   display: flex;
   flex-wrap: wrap;
-}
-
-@media (min-width: 768px) {
-  .main-content {
+  @media (min-width: $break-m) {
     @include center;
   }
 }
@@ -19,7 +16,6 @@
   padding: 0.5em 1em;
 }
 
-
 // Intro
 .intro {
   margin: auto;
@@ -27,11 +23,9 @@
   p {
     font-size: 1.2em;
   }
-}
-
-@media (min-width: 992px) {
-  .intro {
+  @media (min-width: $break-l) {
     width: 45%;
   }
 }
+
 

@@ -13,12 +13,10 @@
     margin: 0.35em 0 0;
     line-height: 1.25;
   }
-}
-
-@media (min-width: 576px) {
-  .card {
+  @media (min-width: 576px) {
     flex: 1;
   }
 }
+
 
 

@@ -498,7 +498,6 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
 }
-
 @media (min-width: 768px) {
   .main-content {
     width: 90%;
@@ -507,6 +506,7 @@ a:hover {
     margin-right: auto;
   }
 }
+
 .inner {
   padding: 0.5em 1em;
 }
@@ -518,12 +518,12 @@ a:hover {
 .intro p {
   font-size: 1.2em;
 }
-
 @media (min-width: 992px) {
   .intro {
     width: 45%;
   }
 }
+
 header {
   height: 460px;
   background: linear-gradient(#009fe1, #3acec2), url("../img/bg.jpg") no-repeat;
@@ -536,6 +536,11 @@ header h1 {
   font-size: 4.8em;
   margin-bottom: 0;
   letter-spacing: 1px;
+}
+@media (max-width: 575px) {
+  header h1 {
+    font-size: 3.4em;
+  }
 }
 header p {
   color: #eeea72;
@@ -552,20 +557,17 @@ header::after {
   background-color: #fff;
   bottom: -25px;
 }
-
-@media (max-width: 575px) {
-  header {
-    height: 340px;
-  }
-  header h1 {
-    font-size: 3.4em;
-  }
-}
 @media (min-width: 992px) {
   header {
     background-position: 0 0, 0 45%;
   }
 }
+@media (max-width: 575px) {
+  header {
+    height: 340px;
+  }
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -578,12 +580,12 @@ header::after {
   margin: 0.35em 0 0;
   line-height: 1.25;
 }
-
 @media (min-width: 576px) {
   .card {
     flex: 1;
   }
 }
+
 footer {
   padding: 2em 0 0;
   height: 100px;
@@ -662,7 +664,6 @@ footer::after {
   position: relative;
   z-index: 100;
 }
-
 @media (max-width: 575px) {
   .img-featured {
     display: none;
